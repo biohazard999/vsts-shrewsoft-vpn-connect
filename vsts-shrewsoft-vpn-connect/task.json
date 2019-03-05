@@ -1,0 +1,30 @@
+{
+    "id": "73f881c8-a984-430a-9476-f28e33154e43",
+    "name": "vsts-shrewsoft-vpn-connect",
+    "friendlyName": "Shrewsoft VPN connect",
+    "description": "A VSTS/TFS/Azure DevOps pipeline/build task to connect to a remote network with the Shrewsoft VPN client.",
+    "helpMarkDown": "",
+    "category": "Utility",
+    "author": "Manuel Grundner",
+    "version": {
+        "Major": 0,
+        "Minor": 0,
+        "Patch": 1
+    },
+    "instanceNameFormat": "Echo $(samplestring)",
+    "inputs": [
+        {
+            "name": "samplestring",
+            "type": "string",
+            "label": "Sample String",
+            "defaultValue": "",
+            "required": true,
+            "helpMarkDown": "A sample string"
+        }
+    ],
+    "execution": {
+        "Node": {
+            "target": "dist/src/index.js"
+        }
+    }
+}

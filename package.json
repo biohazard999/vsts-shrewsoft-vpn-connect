@@ -1,0 +1,46 @@
+{
+  "name": "vsts-shrewsoft-vpn-connect",
+  "version": "0.0.1",
+  "description": "A VSTS/TFS/Azure DevOps pipeline/build task to connect to a remote network with the Shrewsoft VPN client",
+  "main": "./vsts-shrewsoft-vpn-connect/dist/src/index.js",
+  "scripts": {
+    "start": "node ./vsts-shrewsoft-vpn-connect/dist/src/index.js",
+    "build": "tsc",
+    "test": "",
+    "cz": "npx git-cz"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/biohazard999/vsts-shrewsoft-vpn-connect.git"
+  },
+  "keywords": [
+    "Shrewsoft",
+    "VPN",
+    "VSTS",
+    "Azure-DevOps",
+    "TFS",
+    "build",
+    "deploy",
+    "pipeline"
+  ],
+  "author": "Manuel Grundner",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/biohazard999/vsts-shrewsoft-vpn-connect/issues"
+  },
+  "homepage": "https://github.com/biohazard999/vsts-shrewsoft-vpn-connect#readme",
+  "dependencies": {
+    "azure-pipelines-task-lib": "^2.7.7"
+  },
+  "devDependencies": {
+    "@types/mocha": "^5.2.6",
+    "@types/node": "^11.10.4",
+    "@types/q": "^1.5.1",
+    "cz-conventional-changelog": "^2.1.0"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
+}
