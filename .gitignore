@@ -61,6 +61,7 @@ typings/
 .next
 
 ./**/dist/**/*.js
+./**/dist/*.js
 
 *.vsix
 .taskkey

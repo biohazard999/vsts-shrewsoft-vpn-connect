@@ -16,6 +16,9 @@ describe('Sample task tests', function () {
         this.timeout(1000);
     
         let tp = path.join(__dirname, 'success.js');
+
+        console.log(tp);
+
         let tr: ttm.MockTestRunner = new ttm.MockTestRunner(tp);
     
         tr.run();
